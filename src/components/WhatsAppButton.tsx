@@ -3,7 +3,7 @@ import styles from "./WhatsAppButton.module.css";
 
 export default function WhatsAppButton() {
   // Using the contact mobile number for WhatsApp
-  const phoneNumber = "971509441113";
+  const phoneNumber = "971564633944";
   const message = encodeURIComponent("مرحباً النورس للملكية الفكرية، أود الاستفسار عن خدماتكم.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
