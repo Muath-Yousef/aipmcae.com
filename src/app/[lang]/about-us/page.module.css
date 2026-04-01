@@ -1,0 +1,76 @@
+.intro {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+.intro p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  max-width: 900px;
+}
+
+.features {
+  padding: 100px 0;
+  background: var(--surface);
+}
+
+.featGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.featCard {
+  padding: 40px;
+  text-align: center;
+  transition: var(--transition);
+}
+.featCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+
+.featIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.featCard h3 {
+  color: var(--white);
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+}
+
+.featCard p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.protection {
+  padding: 100px 0;
+}
+
+.protectionCard {
+  padding: 60px;
+  text-align: center;
+}
+
+.protectionCard h2 {
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.protectionCard p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+
+@media (max-width: 768px) {
+  .protectionCard { padding: 40px 24px; }
+  .protectionCard h2 { font-size: 1.6rem; }
+}

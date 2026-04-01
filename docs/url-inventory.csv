@@ -1,0 +1,20 @@
+current_url,page_type,language,current_title,target_status,new_route,redirect_needed,notes
+index.php/ar/,home,ar,الرئيسية,active,/,true,Main entry point
+index.php/ar/about-us-ar.html,about,ar,من نحن,active,/ar/about-us,true,About company
+index.php/ar/our-services-ar.html,services_index,ar,خدماتنا,active,/ar/services,true,All services list
+index.php/ar/contact-us-ar.html,contact,ar,اتصل بنا,active,/ar/contact,true,Contact form
+"index.php/ar/المدونة.html",blog_index,ar,المدونة,active,/ar/blog,true,Blog archive
+index.php/ar/our-services-ar/patent-applications-ar.html,service,ar,صياغة طلبات براءات الاختراع,active,/ar/services/patent-applications,true,
+index.php/ar/our-services-ar/تأسيس-الشركات.html,service,ar,تأسيس الشركات,active,/ar/services/company-formation,true,
+index.php/ar/our-services-ar/تصفية-وشطب-الشركات.html,service,ar,تصفية وشطب الشركات,active,/ar/services/company-liquidation,true,
+index.php/ar/our-services-ar/افضل-شركة-تسجيل-براءات-الاختراع.html,service,ar,تسجيل براءات الاختراع,active,/ar/services/patent-registration,true,SEO optimized URL
+index.php/ar/our-services-ar/industrial-designs-ar.html,service,ar,التصاميم الصناعية,active,/ar/services/industrial-designs,true,
+index.php/ar/our-services-ar/registration-of-intellectual-works.html,service,ar,تسجيل المصنفات الفكرية,active,/ar/services/copyright,true,
+index.php/ar/our-services-ar/trademarks-ar.html,service,ar,العلامات التجارية,active,/ar/services/trademarks,true,
+index.php/ar/our-services-ar/trademark-watch-ar.html,service,ar,مراقبة العلامات التجارية,active,/ar/services/trademark-watch,true,
+index.php/ar/our-services-ar/choose-trademark-ar.html,service,ar,كيفية اختيار العلامة التجارية,active,/ar/services/choose-trademark,true,
+index.php/ar/our-services-ar/domain-registration-ar.html,service,ar,تسجيل أسماء النطاق,active,/ar/services/domain-registration,true,
+index.php/ar/our-services-ar/logo-design.html,service,ar,تصميم شعارات,active,/ar/services/logo-design,true,
+index.php/ar/our-services-ar/administrative-services.html,service,ar,الاستشارات الإدارية,active,/ar/services/administrative-services,true,
+index.php/ar/our-services-ar/تقديم-البيانات-المالية-للشركات.html,service,ar,تقديم البيانات المالية للشركات,active,/ar/services/financial-statements,true,
+index.php/ar/our-services-ar/إعداد-عقود-الشركات.html,service,ar,إعداد عقود الشركات,active,/ar/services/company-contracts,true,
