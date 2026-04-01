@@ -1,6 +1,6 @@
 .footer {
-  background: var(--surface);
-  border-top: 1px solid var(--border);
+  background: var(--navy-light);
+  border-top: 1px solid var(--border-glass);
   padding-top: 64px;
 }
 
@@ -18,39 +18,84 @@
   line-height: 1.9;
 }
 
-.logo {
+.logoRow {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  margin-bottom: 8px;
 }
-.logo span { font-size: 2rem; }
-.logo strong { color: var(--gold); font-size: 1.15rem; display: block; line-height: 1.2; }
-.logo small { color: var(--text-muted); font-size: 0.65rem; }
+
+.logoImg {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.logoRow h3 {
+  color: var(--gold-premium);
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
 
 .footer h4 {
-  color: var(--gold);
+  color: var(--gold-premium);
   font-size: 1rem;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 
-.footer ul { display: flex; flex-direction: column; gap: 10px; }
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer li {
   color: var(--text-muted);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   transition: var(--transition);
 }
-.footer li:hover { color: var(--gold); }
 
+.footer li a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer li:hover,
+.footer li a:hover {
+  color: var(--gold-premium);
+}
+
+/* ───── Contact List ───── */
 .contactList {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.contactItem svg {
+  color: var(--gold-premium);
+  flex-shrink: 0;
+}
+
+/* ───── Socials ───── */
 .socials {
   display: flex;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .socialIcon {
@@ -59,24 +104,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--navy-mid);
-  border: 1px solid var(--border);
+  background: rgba(197, 160, 89, 0.08);
+  border: 1px solid var(--border-glass);
   border-radius: 50%;
-  color: var(--gold);
+  color: var(--gold-premium);
   transition: var(--transition);
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .socialIcon:hover {
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--gold-premium);
+  color: var(--navy-deep);
   transform: translateY(-2px);
 }
 
+/* ───── Bottom ───── */
 .bottom {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-glass);
   padding: 24px 0;
   text-align: center;
   color: var(--text-muted);

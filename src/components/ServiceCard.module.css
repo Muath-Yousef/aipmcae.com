@@ -2,32 +2,20 @@
   display: flex;
   flex-direction: column;
   padding: 40px 30px;
-  background: var(--navy-light);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius);
-  transition: var(--transition);
   text-align: center;
-  position: relative;
-  overflow: hidden;
   height: 100%;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.card * {
+  text-decoration: none !important;
 }
 
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   border-color: var(--gold-premium);
   box-shadow: 0 20px 40px -10px rgba(197, 160, 89, 0.2);
-}
-
-.card:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(197, 160, 89, 0.05), transparent 40%);
-  z-index: 1;
-  pointer-events: none;
 }
 
 .icon {
@@ -37,8 +25,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  z-index: 2;
 }
 
 .iconImg {
@@ -49,10 +35,9 @@
 }
 
 .card h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 16px;
   color: var(--white);
-  z-index: 2;
 }
 
 .card p {
@@ -60,7 +45,6 @@
   color: var(--text-muted);
   margin-bottom: 24px;
   line-height: 1.6;
-  z-index: 2;
   flex-grow: 1;
 }
 
@@ -68,7 +52,6 @@
   font-size: 1.5rem;
   color: var(--gold-premium);
   transition: var(--transition);
-  z-index: 2;
 }
 
 .card:hover .arrow {
