@@ -154,8 +154,19 @@ ul { list-style: none; }
 
 /* ───── Responsive ───── */
 @media (max-width: 768px) {
+  :root {
+    --container: 92%;
+  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.4rem; }
+  .btn { padding: 10px 20px; font-size: 0.9rem; }
   .page-hero h1 { font-size: 2rem; }
   .section-title h2 { font-size: 1.7rem; }
   .container { padding: 0 16px; }
-  .btn { padding: 12px 24px; font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.8rem; }
+  p { font-size: 1rem; line-height: 1.6; }
 }

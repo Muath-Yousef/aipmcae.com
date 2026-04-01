@@ -73,7 +73,7 @@ export default function Header({ lang = "ar" }: { lang?: string }) {
         </nav>
 
         <button
-          className={styles.burger}
+          className={`${styles.burger} ${open ? styles.burgerOpen : ""}`}
           onClick={() => setOpen(!open)}
           aria-label="القائمة"
         >
