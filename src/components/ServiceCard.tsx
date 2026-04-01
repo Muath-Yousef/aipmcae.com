@@ -7,13 +7,14 @@ interface Props {
   description: string;
   href: string;
   lang?: string;
+  className?: string;
 }
 
-export default function ServiceCard({ icon, title, description, href, lang = "ar" }: Props) {
+export default function ServiceCard({ icon, title, description, href, lang = "ar", className = "" }: Props) {
   const isAr = lang === "ar";
   const isImage = icon.startsWith("/");
   return (
-    <Link href={href} className={`glass ${styles.card}`}>
+    <Link href={href} className={`card-premium ${styles.card} ${className}`}>
       <span className={styles.icon}>
         {isImage ? <img src={icon} alt={title} className={styles.iconImg} /> : icon}
       </span>

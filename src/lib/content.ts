@@ -14,7 +14,7 @@ export interface Service {
 export const services: Service[] = [
   {
     slug: "trademarks",
-    icon: "/images/icons/trademark.png",
+    icon: "/images/icons/trademark-3d.png",
     ar: {
       title: "العلامات التجارية",
       description: "تسجيل وحماية العلامات التجارية لضمان هوية شركتك وتميزها في السوق.",
@@ -36,7 +36,7 @@ export const services: Service[] = [
   },
   {
     slug: "trademark-watch",
-    icon: "/images/icons/trademark.png",
+    icon: "/images/icons/search-3d.png",
     ar: {
       title: "مراقبة العلامات التجارية",
       description: "مراقبة مستمرة لعلاماتك التجارية لمنع أي تعدٍّ أو استخدام غير مشروع.",
@@ -56,7 +56,7 @@ export const services: Service[] = [
   },
   {
     slug: "patent-applications",
-    icon: "/images/icons/patent.png",
+    icon: "/images/icons/patent-3d.png",
     ar: {
       title: "صياغة براءات الاختراع",
       description: "صياغة احترافية لطلبات براءات الاختراع لضمان حماية قانونية فعالة لابتكاراتك.",
@@ -76,7 +76,7 @@ export const services: Service[] = [
   },
   {
     slug: "patent-registration",
-    icon: "/images/icons/patent.png",
+    icon: "/images/icons/patent-3d.png",
     ar: {
       title: "تسجيل براءات الاختراع",
       description: "تسجيل براءات الاختراع لحماية ابتكاراتك التقنية وضمان حقوقك الحصرية.",
@@ -96,7 +96,7 @@ export const services: Service[] = [
   },
   {
     slug: "industrial-designs",
-    icon: "/images/icons/patent.png",
+    icon: "/images/icons/patent-3d.png",
     ar: {
       title: "التصاميم الصناعية",
       description: "حماية تصاميمك الصناعية من التقليد وضمان حقوقك الإبداعية.",
@@ -116,7 +116,7 @@ export const services: Service[] = [
   },
   {
     slug: "copyright",
-    icon: "/images/icons/copyright.png",
+    icon: "/images/icons/copyright-3d.png",
     ar: {
       title: "المصنفات الفكرية",
       description: "حماية حقوق المؤلف للإبداعات الفكرية والأعمال الأدبية والفنية.",
@@ -136,7 +136,7 @@ export const services: Service[] = [
   },
   {
     slug: "company-formation",
-    icon: "/images/icons/company.png",
+    icon: "/images/icons/company-3d.png",
     ar: {
       title: "تأسيس الشركات",
       description: "خدمة متكاملة لتأسيس الشركات في الإمارات بسرعة واحترافية.",
