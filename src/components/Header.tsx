@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Header.module.css";
@@ -34,6 +34,14 @@ export default function Header({ lang = "ar" }: { lang?: string }) {
   // Calculate switch path
   const switchPath = pathname.replace(`/${lang}`, `/${switchLang}`);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [open]);
+
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
@@ -44,6 +52,11 @@ export default function Header({ lang = "ar" }: { lang?: string }) {
             <small>{t.subBrand}</small>
           </div>
         </Link>
+
+        <div 
+          className={`${styles.backdrop} ${open ? styles.backdropOpen : ""}`} 
+          onClick={() => setOpen(false)}
+        />
 
         <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
           <div className={styles.langSwitchMobile}>
@@ -64,23 +77,25 @@ export default function Header({ lang = "ar" }: { lang?: string }) {
           <Link href={`/${lang}/contact/`} className="btn btn-primary" onClick={() => setOpen(false)}>
             {t.requestService}
           </Link>
-          
+        </nav>
+
+        <div className={styles.desktopActions}>
           <div className={styles.langSwitchDesktop}>
             <Link href={switchPath} className={styles.langLink}>
               {switchLabel}
             </Link>
           </div>
-        </nav>
 
-        <button
-          className={`${styles.burger} ${open ? styles.burgerOpen : ""}`}
-          onClick={() => setOpen(!open)}
-          aria-label="القائمة"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+          <button
+            className={`${styles.burger} ${open ? styles.burgerOpen : ""}`}
+            onClick={() => setOpen(!open)}
+            aria-label="القائمة"
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
     </header>
   );
